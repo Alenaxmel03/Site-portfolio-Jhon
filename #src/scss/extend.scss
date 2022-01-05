@@ -1,0 +1,9 @@
+%container  {
+    max-width: $lg;
+    margin: 0 auto;
+    font-family: $font-family;
+    color: $color-dark;
+    @include xl {
+        margin: 0px 20px;
+      }
+}

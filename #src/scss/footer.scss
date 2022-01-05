@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  @include md {
+    padding: 30px 0;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 26px 0px;
+  }
+  &__copy {
+    font-size: 14px;
+    line-height: 21 / 14 * 100%;
+  }
+}
+
+.social__item {
+  font-size: 30px;
+  color: #21243d;
+  margin: 0px 17px;
+  transition: color 0.3s ease 0s;
+  @media (min-width: $lg) {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

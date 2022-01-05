@@ -1,0 +1,56 @@
+.blog {
+  padding: 0px 0px 50px 0px;
+  @include md {
+    padding: 0px 0px 30px 0px;
+  }
+
+  &__title {
+    margin: 0px 0px 50px 0px;
+    @include md {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+  &__article-name {
+    font-size: 30px;
+    font-weight: 500;
+    display: inline-block;
+    line-height: 44 / 30 * 100%;
+    color: inherit;
+    margin: 0px 0px 10px 0px;
+    transition: color 0.3s ease 0s;
+    @media (min-width: $lg) {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+    @include md {
+      font-size: 26px;
+    }
+  }
+  &__item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0px 0px 30px 0px;
+    margin: 0px 0px 30px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+    @include md {
+      padding: 0px 0px 25px 0px;
+      margin: 0px 0px 25px 0px;
+    }
+  }
+  &__info {
+    display: flex;
+    font-size: 20px;
+    margin: 0px 0px 10px 0px;
+    @include md {
+      font-size: 16px;
+    }
+  }
+  &__separator {
+    margin: 0px 15px;
+  }
+  &__category {
+    color: #8695a4;
+  }
+}
